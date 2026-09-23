@@ -17,7 +17,7 @@ struct ContentView: View {
             Spacer()
             Image("AmericanNightsCover")
                 .resizable()
-                .frame(width: 350, height: 350, alignment: Alignment.center)
+                .frame(width: 360, height: 360, alignment: Alignment.center)
             Spacer()
             VStack {
                 // Name/Artist/Like
@@ -30,9 +30,11 @@ struct ContentView: View {
                             .foregroundStyle(.secondary)
                     }
                     Spacer()
-                    Image(systemName: "heart")
+                    Image(systemName: "heart.fill")
                         .resizable()
                         .frame(width: 25, height: 25)
+                        .aspectRatio(contentMode: .fit)
+                        .padding([.trailing],4)
                 }
                 //Progress bar
                 VStack {
@@ -90,6 +92,7 @@ struct ContentView: View {
                     Spacer()
                     HStack(alignment: .center){
                         Image(systemName: "square.and.arrow.up")
+                            .padding([.trailing], 8)
                         Image(systemName: "line.3.horizontal.decrease")
                     }
                 }
