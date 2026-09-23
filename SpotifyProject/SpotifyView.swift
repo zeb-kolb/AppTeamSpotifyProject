@@ -42,7 +42,7 @@ struct ContentView: View {
                         Slider(value: $progress, in: 0...100)
                             .accentColor(.white)
                             .buttonStyle(.plain)
-                        //Had to google this part
+                        //Had to google this part to get the slider to be a circle
                             .onAppear {
                                            let thumbImage = UIImage(systemName: "circle.fill")
                                            UISlider.appearance().setThumbImage(thumbImage, for: .normal)
