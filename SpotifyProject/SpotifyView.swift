@@ -50,7 +50,7 @@ struct ContentView: View {
                             
                     }
                     HStack {
-                        Text("0:11")
+                        Text("0:56")
                         Spacer()
                         Text("3:26")
                     }
