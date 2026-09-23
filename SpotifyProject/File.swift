@@ -1,1 +1,8 @@
-#colorLiteral(red: 0.6483831406, green: 0.3363007903, blue: 0.2497098744, alpha: 1)
+//
+//  File.swift
+//  SpotifyProject
+//
+//  Created by Z on 9/23/26.
+//
+
+
